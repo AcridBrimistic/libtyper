@@ -20,11 +20,7 @@
  */
 #include "libtyper.h"
 
-#include <unistd.h> // usleep() and fflush()
-#include <stdio.h> // putchar()
-#include <string.h> // strlen()
-
-int typer(char str[], uint32_t typespeed) {
+int typer(const char str[], uint32_t typespeed) {
 
 int i;
 int length_str = strlen(str);
